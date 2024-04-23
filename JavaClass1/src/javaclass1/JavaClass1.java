@@ -11,7 +11,7 @@ public class JavaClass1 {
         System.out.println("Enter length");
         double length = input.nextInt();
         System.out.println("Enter width");
-        double width = input.nextInt();
+        double width = input.nextDouble();  
 
         double area = length * width;
 
