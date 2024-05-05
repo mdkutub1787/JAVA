@@ -9,8 +9,7 @@ public class SingleDimentionalArray {
 
         int[] myList = new int[100];
 
-//        String[] names=new String[15];
-//        boolean[] status=new boolean[15];
+
         for (int i = 0; i < myList.length; i++) {
             Random r = new Random();
             int num = r.nextInt(100) + 1;

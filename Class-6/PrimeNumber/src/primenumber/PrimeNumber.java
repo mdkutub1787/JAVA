@@ -1,13 +1,12 @@
 package primenumber;
 
-import java.util.Scanner;
+
 
 public class PrimeNumber {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter ur number & check prime or not :");
+        
         int userInput = input.nextInt();
         int count = 0;
 
