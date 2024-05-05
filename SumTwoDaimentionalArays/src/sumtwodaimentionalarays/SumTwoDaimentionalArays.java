@@ -1,16 +1,14 @@
- 
-package towdinmensionalarray;
 
-import java.util.Arrays;
-import java.util.Random;
+package sumtwodaimentionalarays;
 
 /**
  * @author MD KUTUB UDDIN
  */
-public class TowDinmensionalArray {
+public class SumTwoDaimentionalArays {
 
-    public static void main(String[] args) {
-               int[][] numbers={{1,2,3},{4,5,6},{7,8,9}};
+ public static void main(String[] args) {
+       
+        int[][] numbers={{1,2,3},{4,5,6},{7,8,9}};
         int sum=sumArrays(numbers);
         System.out.println(sum);
         
