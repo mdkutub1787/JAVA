@@ -14,10 +14,6 @@ public class InheritingPrivateMain {
         a.setPlayStore("Game");
         a.setAppStore("apple app");
 
-        System.out.println(a.getMakeText());
-        System.out.println(a.getCamera());
-        System.out.println(a.getVideo());
-        System.out.println(a.getPlayStore());
-        System.out.println(a.getAppStore());
+        a.displayInformation();
     }
 }
