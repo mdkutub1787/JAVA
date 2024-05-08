@@ -14,15 +14,14 @@ public class InheritingPrivateMain {
         a.setPlayStore("Game");
         a.setAppStore("apple app");
         a.displayInformation();
-        
-        
+
         Apple a1 = new Apple();
         a1.setMakeText("Massanger");
         a1.setCamera("100 Px");
         a1.setVideo("Q Player");
         a1.setPlayStore("Free Fire ");
         a1.setAppStore("apple app2");
-         a1.displayInformation();
-        
+        a1.displayInformation();
+
     }
 }
