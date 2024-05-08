@@ -15,6 +15,8 @@ public class Apple extends Android {
         this.appStore = appStore;
     }
 
+    
+    //object create
     void displayInformation() {
 
         System.out.println(getMakeText());
@@ -22,6 +24,6 @@ public class Apple extends Android {
         System.out.println(getVideo());
         System.out.println(getPlayStore());
         System.out.println(getAppStore());
-
+        System.out.println("\n");
     }
 }
