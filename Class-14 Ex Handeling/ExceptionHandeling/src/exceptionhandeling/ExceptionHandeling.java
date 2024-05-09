@@ -27,8 +27,9 @@ public class ExceptionHandeling {
            System.out.println("Result: "+number1/number2); 
         } catch (Exception e) {
         }
-        QuotionWithException exeption = new QuotionWithException();
-        System.out.println(exeption.quotion(number1, number2));
+//        QuotionWithException exeption = new QuotionWithException();
+//        System.out.println(exeption.quotion(number1, number2));
+     
 
     }
 
