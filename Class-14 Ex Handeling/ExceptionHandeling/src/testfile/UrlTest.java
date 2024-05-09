@@ -13,7 +13,7 @@ public class UrlTest {
 
     public static void main(String[] args) throws MalformedURLException, IOException {
 
-        String url = new String("http://google.com/index.html");
+        String url = "http://google.com/index.html";
 
         URL url1 = new URL(url);
 
