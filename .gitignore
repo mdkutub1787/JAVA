@@ -100,3 +100,6 @@
 /PrimeNumOfCountAllPrime/nbproject/private/
 /PrimeNumOfCountAllPrime/build/
 .github/workflows/scala.yml
+/Array/nbproject/private/
+/ArrayTest/nbproject/private/
+/ArrayTest/build/
