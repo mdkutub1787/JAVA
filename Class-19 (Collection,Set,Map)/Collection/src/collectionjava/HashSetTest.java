@@ -17,7 +17,6 @@ class HashSetTest {
         set.add("Afghan");
         set.add("Afghan");
         System.out.println(set);
-        
-        
+
     }
 }
