@@ -1,7 +1,5 @@
 package exceptionhandeling;
 
-import java.util.Scanner;
-
 /**
  * @author MD KUTUB UDDIN
  */
