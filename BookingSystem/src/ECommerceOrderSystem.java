@@ -77,9 +77,9 @@ public class ECommerceOrderSystem {
             switch (choice) {
                 case 1:
                     System.out.println("Available Products:");
-                    System.out.println("1. Laptop - $999.99");
-                    System.out.println("2. Headphones - $49.99");
-                    System.out.println("3. Phone - $599.99");
+                    System.out.println("1. Laptop - Tk 999.99");
+                    System.out.println("2. Headphones - Tk 49.99");
+                    System.out.println("3. Phone - Tk 599.99");
                     System.out.print("Enter product number to add to cart: ");
                     int productChoice = scanner.nextInt();
                     switch (productChoice) {
