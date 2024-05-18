@@ -7,9 +7,29 @@ public class Teacher extends Persion {
 
     String qualification;
 
-    void displayInformation2() {
-        displayInformation1();
-        System.out.println("Qualification :" + qualification);
-        System.out.println("\n");
+    public Teacher() {
     }
+
+    public Teacher(String qualification) {
+        this.qualification = qualification;
+    }
+
+    public Teacher(String qualification, String name, String mail, int age) {
+        super(name, mail, age);
+        this.qualification = qualification;
+    }
+
+    
+    @Override
+    public void displayInformation() {
+        System.out.println(this.qualification+" "+super.name+" "+super.mail+" " +super.age);
+
+    }
+
+  
+
+   
+    
+    
+
 }

@@ -9,11 +9,23 @@ public class Persion {
     String mail;
     int age;
 
-    void displayInformation1() {
-        System.out.println("Name  : " + name);
-        System.out.println("Mail  : " + mail);
-        System.out.println("Age   : " + age);
-     
+    public Persion() {
     }
 
+    public Persion(String name, String mail, int age) {
+        this.name = name;
+        this.mail = mail;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Persion{" + "name=" + name + ", mail=" + mail + ", age=" + age + '}';
+    }
+
+    public void displayInformation() {
+
+    }
+
+   
 }

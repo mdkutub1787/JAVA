@@ -30,7 +30,7 @@ public class BankManagement {
                     account.deposit(depositAmount);
                     break;
                 case 2:
-                    System.out.print("Enter amount to withdraw : Tk");
+                    System.out.print("Enter amount to withdraw : Tk  ");
                     double withdrawAmount = scanner.nextDouble();
                     account.withdraw(withdrawAmount);
                     break;
