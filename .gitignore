@@ -116,6 +116,7 @@
 /GenericeArrayList/build/
 /Generics/nbproject/private/
 /Generics/build/
+<<<<<<< Updated upstream
 /JavaProjectAI/nbproject/private/
 /JavaProjectAI/build/
 /BankMangmentProject/nbproject/private/
@@ -148,3 +149,13 @@
 /Main/build/
 /BubbleSort/nbproject/private/
 /BubbleSort/build/
+=======
+/JavaApplication37/nbproject/private/
+/JavaApplication37/build/
+/Recursion/nbproject/private/
+/Recursion/build/
+/BookingSystem/nbproject/private/
+/BookingSystem/build/
+/JavaApplication40/nbproject/private/
+/JavaApplication40/build/
+>>>>>>> Stashed changes
