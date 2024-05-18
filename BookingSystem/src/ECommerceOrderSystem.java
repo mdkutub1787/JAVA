@@ -1,8 +1,10 @@
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 class Product {
+
     private String name;
     private double price;
 
@@ -21,6 +23,7 @@ class Product {
 }
 
 class ShoppingCart {
+
     private List<Product> items;
 
     public ShoppingCart() {
@@ -38,7 +41,7 @@ class ShoppingCart {
         } else {
             System.out.println("Your cart contains:");
             for (Product item : items) {
-                System.out.println(item.getName() + " - $" + item.getPrice());
+                System.out.println(item.getName() + " - Tk" + item.getPrice());
             }
         }
     }
@@ -53,6 +56,7 @@ class ShoppingCart {
 }
 
 public class ECommerceOrderSystem {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ShoppingCart cart = new ShoppingCart();
@@ -63,7 +67,7 @@ public class ECommerceOrderSystem {
         System.out.println("Welcome to the E-Commerce Order System!");
 
         while (true) {
-            System.out.println("\n1. Add Product to Cart");
+            System.out.println("1. Add Product to Cart");
             System.out.println("2. View Cart");
             System.out.println("3. Place Order");
             System.out.println("4. Exit");
