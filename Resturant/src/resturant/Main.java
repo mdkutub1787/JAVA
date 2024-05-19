@@ -7,9 +7,10 @@ public class Main {
    Resturant restaurant = new Resturant();
 
         // Adding menu items
-        restaurant.addMenuItem("Burger", "A delicious burger", 5.99);
-        restaurant.addMenuItem("Pizza", "Tasty pizza with toppings", 8.99);
-        restaurant.addMenuItem("Salad", "Fresh garden salad", 4.99);
+        restaurant.addMenuItem("Burger", "A delicious burger", 599);
+        restaurant.addMenuItem("Pizza", "Tasty pizza with toppings", 899);
+        restaurant.addMenuItem("Salad", "Fresh garden salad", 399);
+        restaurant.addMenuItem("Kacci", "Original  Kacci Bhabi", 499);
 
         // Creating an order
         Order order = restaurant.createOrder();
@@ -19,6 +20,6 @@ public class Main {
 
         // Calculating total
         double total = order.getTotal();
-        System.out.println("Total: $" + total);
+        System.out.println("Total: Tk " + total);
     }
 }
