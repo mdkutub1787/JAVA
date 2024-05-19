@@ -13,7 +13,7 @@ public class ExceptionHandling {
 
         System.out.println("Enter second Number :");
         double number2 = input.nextDouble();
-        
+
         try {
 
             if (number2 == 0) {
@@ -27,6 +27,3 @@ public class ExceptionHandling {
         }
     }
 }
-
-
-
