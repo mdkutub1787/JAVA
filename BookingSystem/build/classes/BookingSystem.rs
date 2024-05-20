@@ -1,3 +1,0 @@
-bookingsystem.BookingSystem
-TicketBookingSystem
-Main
