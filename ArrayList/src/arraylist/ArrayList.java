@@ -1,33 +1,27 @@
+
 package arraylist;
 
-import java.util.Scanner;
 
-public class ArrayList {
+public class ArrayList <T>{
+
+    private T t;
+
+    public void set(T t) {
+        this.t = t;
+    }
+
+    public T get() {
+        return t;
+    }
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        ArrayList<Integer> integer = new ArrayList<>();
+        ArrayList<String> string= new ArrayList<>();
 
-        int[] number = new int[5];
+        integer.set(10);
+        string.set("Hello World");
 
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Enter Number " + (i + 1) + " : ");
-            number[i] = input.nextInt();
-        }
-
-        int lowest = number[0];
-        int highest = number[0];
-
-        for (int i = 1; i < number.length; i++) {
-            if (number[i] > highest) {
-                highest = number[i];
-            } else {
-                lowest = number[i];
-            }
-
-        }
-        System.out.println("Highest number is : " + highest);
-        System.out.println("Lowest number is  : " + lowest);
-
+        System.out.println("Integer Value: " + integer.get());
+        System.out.println("String Value: " + string.get());
     }
 }
-
