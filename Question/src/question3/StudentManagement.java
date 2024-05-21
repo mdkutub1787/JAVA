@@ -23,14 +23,14 @@ public class StudentManagement {
 
         File file = new File("H:\\kutub.dat");
         
-        PrintWriter printw=new PrintWriter(file);
-        printw.append(" "+st1);
-        printw.append(" "+st2);
-        printw.append(" "+st3);
-        printw.close();
-        
-        Scanner scanner=new Scanner(file);
-        System.out.println(scanner.nextLine());
+//        PrintWriter printw=new PrintWriter(file);
+//        printw.append(" "+st1);
+//        printw.append(" "+st2);
+//        printw.append(" "+st3);
+//        printw.close();
+//        
+//        Scanner scanner=new Scanner(file);
+//        System.out.println(scanner.nextLine());
 
         DataOutputStream dos = new DataOutputStream(new FileOutputStream(file));
         dos.writeUTF(st1.toString());
