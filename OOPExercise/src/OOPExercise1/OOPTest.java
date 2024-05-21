@@ -1,5 +1,5 @@
 
-package oopexercise;
+package OOPExercise1;
 
 /**
  * @author MD KUTUB UDDIN

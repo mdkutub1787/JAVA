@@ -1,4 +1,4 @@
-package oopexercise;
+package OOPExercise1;
 
 public class Person {
 
