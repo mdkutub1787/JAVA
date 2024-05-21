@@ -3,7 +3,7 @@ package question2;
 /**
  * @author MD KUTUB UDDIN
  */
-public class VehicleManagementSystem {
+public class TestVehicleManagementSystem {
 
     public static void main(String[] args) {
 
