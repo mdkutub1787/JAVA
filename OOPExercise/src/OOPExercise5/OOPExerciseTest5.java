@@ -1,6 +1,7 @@
 package OOPExercise5;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * @author MD KUTUB UDDIN
@@ -9,16 +10,14 @@ public class OOPExerciseTest5 {
 
     public static void main(String[] args) {
 
-        Book b1 = new Book(" Java Programming", "Dennis Ritchie", "ISBN: 9780131101630");
-
-        Book.addBook(b1);
-     
-
-        ArrayList< Book> b = Book.getBookCollection();
-
-        for (Book book : b) {
-            System.out.println(book.getTitle() + " by " + book.getAuthor() + ", ISBN: " + book.getISBN());
-        }
+        LinkedList<Book> books=new LinkedList<>();
+        
+        Book b=new Book("java", "python", 12332);
+        Book b1=new Book("java Towhid", "python", 12332);
+        
+        books.add(b);
+        books.add(b1);
+        System.out.println(books);
     }
 
 }
