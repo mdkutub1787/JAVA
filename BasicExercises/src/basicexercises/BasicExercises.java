@@ -14,6 +14,7 @@ public class BasicExercises {
         System.out.println("J  J  aaaaa   V V  aaaaa");
         System.out.println(" JJ  a     a   V  a     a");
 
+        
     }
 
 }
