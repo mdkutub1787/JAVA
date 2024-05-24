@@ -1,5 +1,5 @@
 
-package Exercise1;
+package Exercises1;
 
 
 public class Lion extends Animal{
