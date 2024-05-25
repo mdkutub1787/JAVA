@@ -2,7 +2,27 @@ package febonacciofmathod;
 
 public class SubFebonacci {
 
-  private long index;
+    private long index;
+
+    public SubFebonacci() {
+    }
+
+    public SubFebonacci(long index) {
+        this.index = index;
+    }
+
+    public long getIndex() {
+        return index;
+    }
+
+    public void setIndex(long index) {
+        this.index = index;
+    }
+
+    @Override
+    public String toString() {
+        return "SubFebonacci{" + "index=" + index + '}';
+    }
 
     public long febonacci(long index) {
 
