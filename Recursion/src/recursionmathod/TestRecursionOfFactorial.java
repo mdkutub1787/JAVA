@@ -10,7 +10,7 @@ public class TestRecursionOfFactorial {
         int fac=scanner.nextInt();
         
         SubRecursion r=new SubRecursion();
-        System.out.println("factorial of " + fac + " is :" +r.factorial(fac));
+        System.out.println("Factorial of " + fac+ " is : " + r.factorial(fac));
          
     }
 

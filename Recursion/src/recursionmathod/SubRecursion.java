@@ -2,35 +2,33 @@ package recursionmathod;
 
 public class SubRecursion {
 
-   private int s ;
+    private int number;
 
     public SubRecursion() {
     }
 
-    public SubRecursion(int s) {
-        this.s = s;
+    public SubRecursion(int number) {
+        this.number = number;
     }
 
-    public int getS() {
-        return s;
+    public int getNumber() {
+        return number;
     }
 
-    public void setS(int s) {
-        this.s = s;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     @Override
     public String toString() {
-        return "SubRecursion{" + "s=" + s + '}';
+        return "SubRecursion{" + "number=" + number + '}';
     }
-   
-   
 
-    public int factorial(int s) {
-        if (s == 0) {
+    public int factorial(int number) {
+        if (number == 0) {
             return 1;
         } else {
-            return s * factorial(s - 1);
+            return number * factorial(number - 1);
         }
 
     }
