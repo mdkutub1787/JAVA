@@ -7,13 +7,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Scanner;
 
 /**
  * @author MD KUTUB UDDIN
  */
-public class StudentManagement {
+public class StudentManagementTest {
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
 
@@ -22,15 +20,6 @@ public class StudentManagement {
         Student st3 = new Student("Rofik", 23);
 
         File file = new File("H:\\kutub.dat");
-        
-//        PrintWriter printw=new PrintWriter(file);
-//        printw.append(" "+st1);
-//        printw.append(" "+st2);
-//        printw.append(" "+st3);
-//        printw.close();
-//        
-//        Scanner scanner=new Scanner(file);
-//        System.out.println(scanner.nextLine());
 
         DataOutputStream dos = new DataOutputStream(new FileOutputStream(file));
         dos.writeUTF(st1.toString());
