@@ -10,9 +10,9 @@ import org.w3c.dom.NodeList;
 public class XMLReader {
 
     public static void main(String[] args) {
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
         try {
-            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = dbf.newDocumentBuilder();
             Document d = builder.parse("students.xml");
             d.getDocumentElement().normalize();
