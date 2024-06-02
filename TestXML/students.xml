@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<students>
+    <student>
+        <id>1</id>
+        <name>John Doe</name>
+        <position>Developer</position>
+        <salary>50000</salary>
+    </student>
+    <student>
+        <id>2</id>
+        <name>Jane Smith</name>
+        <position>Designer</position>
+        <salary>60000</salary>
+    </student>
+</students>
