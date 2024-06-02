@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<company>
+    <student>
+        <id>1</id>
+        <name>Sanaullah</name>
+        <postion>Manager</postion>
+        <salary>50000</salary>
+    </student>
+</company>
+
+<company>
+    <student>
+        <id>2</id>
+        <name>Raju Ahmed</name>
+        <postion>CM</postion>
+        <salary>80000</salary>
+    </student>
+</company>
+
+<company>
+    <student>
+        <id>3</id>
+        <name>Rabiul islam</name>
+        <postion>Hr Admin</postion>
+        <salary>60000</salary>
+    </student>
+</company>
