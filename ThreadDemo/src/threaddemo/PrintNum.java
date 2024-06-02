@@ -1,6 +1,6 @@
 package threaddemo;
 
-public  class PrintNum implements Runnable {
+public  class PrintNum implements Runnable{
 
     private int lastNum;
 
