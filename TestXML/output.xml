@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<idb>
+    <employee>
+        <id>1</id>
+        <name>Najmul Islam</name>
+        <position>Software Engineer</position>
+        <salary>60000</salary>
+    </employee>
+    <employee>
+        <id>2</id>
+        <name>Rabiul Islam</name>
+        <position>Software Engineer</position>
+        <salary>60000</salary>
+    </employee>
+</idb>
