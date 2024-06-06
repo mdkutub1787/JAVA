@@ -18,7 +18,7 @@ public class JDBCMain {
 
         JDBC jdbc = new JDBC();
 
-        String insertSql = "insert into test(name,city)" + "values(?,?)";
+        String insertSql = "insert into test2(name,city)" + "values(?,?)";
         try {
             ps = jdbc.getConnection().prepareStatement(insertSql);
             ps.setString(1, "Kutub Uddin");
@@ -31,7 +31,7 @@ public class JDBCMain {
             Logger.getLogger(JDBCMain.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        String selectSql = "select * from test";
+        String selectSql = "select * from test2";
         try {
             ps = jdbc.getConnection().prepareStatement(selectSql);
             rs = ps.executeQuery();
