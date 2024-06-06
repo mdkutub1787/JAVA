@@ -19,10 +19,10 @@ public class JDBCConnectionMain {
         Student student = new Student();
         List<Student> studentList = getById(1);
 
-        student.setName(studentList.get(0).getName());
-        student.setEmail("Rajujee123456@gmail.com");
-        student.setAddress(studentList.get(0).getAddress());
-        student.setCell(studentList.get(0).getCell());
+        student.setName("Kutub uddin");
+        student.setEmail("kutub1787@gmail.com");
+        student.setAddress("Kushtia");
+        student.setCell("01763001787");
         student.setId(studentList.get(0).getId());
 
         editData(student);
@@ -39,7 +39,7 @@ public class JDBCConnectionMain {
             ps.setString(1, "Raju");
             ps.setString(2, "Raju@gmail.com");
             ps.setString(3, "Azimpur, Dhaka");
-            ps.setString(4, "01151");
+            ps.setString(4, "017633151");
 
             ps.executeUpdate();
             ps.close();
