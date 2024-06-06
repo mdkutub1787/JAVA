@@ -101,7 +101,8 @@ public class JDBCConnectionMain {
     }
 
     public static List<Student> getById(int id) {
-         List<Student> studentList = new ArrayList<>();
+        
+        List<Student> studentList = new ArrayList<>();
         String sql = "select * from test2 where id=?";
 
         try {
@@ -125,7 +126,6 @@ public class JDBCConnectionMain {
             Logger.getLogger(JDBCConnectionMain.class.getName()).log(Level.SEVERE, null, ex);
         }
         return studentList;
-       
 
     }
 
