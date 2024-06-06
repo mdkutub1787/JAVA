@@ -22,7 +22,7 @@ public class JDBCConnectionMain {
         student.setName("Kutub uddin");
         student.setEmail("kutub1787@gmail.com");
         student.setAddress("Kushtia");
-        student.setCell("01763001787");
+        student.setCell("01700001787");
         student.setId(studentList.get(0).getId());
 
         editData(student);
@@ -101,14 +101,11 @@ public class JDBCConnectionMain {
     }
 
     public static List<Student> getById(int id) {
-        
         List<Student> studentList = new ArrayList<>();
         String sql = "select * from test2 where id=?";
-
         try {
             ps = db.getCon().prepareStatement(sql);
             ps.setInt(1, id);
-
             rs = ps.executeQuery();
 
             while (rs.next()) {
@@ -119,6 +116,7 @@ public class JDBCConnectionMain {
                         rs.getString("address"),
                         rs.getString("cell")
                 );
+
                 studentList.add(s);
             }
 
