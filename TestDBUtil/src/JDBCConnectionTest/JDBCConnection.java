@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 public class JDBCConnection {
 
     private Connection con = null;
-    private String url = "jdbc:mysql://localhost:3306/dbtest";
+    private String url = "jdbc:mysql://localhost:3306/dbtset";
     private String user = "root";
     private String password = "1234";
     private String driver = "com.mysql.cj.jdbc.Driver";
