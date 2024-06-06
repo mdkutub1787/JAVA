@@ -16,17 +16,23 @@ public class JDBCConnectionMain {
     static JDBCConnection db = new JDBCConnection();
 
     public static void main(String[] args) {
-        Student student = new Student();
-        List<Student> studentList = getById(1);
-
-        student.setName("Kutub uddin");
-        student.setEmail("kutub1787@gmail.com");
-        student.setAddress("Kushtia");
-        student.setCell("01700001787");
-        student.setId(studentList.get(0).getId());
-
+        
+        saveData();
+        showData();
+        Student student = new Student(1, "sanaullahhhhh", "ail@gmail.com", "", "");
         editData(student);
         showData();
+//        Student student = new Student();
+//        List<Student> studentList = getById(1);
+//
+//        student.setName("Kutub uddin");
+//        student.setEmail("kutub1787@gmail.com");
+//        student.setAddress("Kushtia");
+//        student.setCell("01700001787");
+//        student.setId(studentList.get(0).getId());
+//
+//        editData(student);
+//        showData();
 
     }
 
@@ -100,31 +106,31 @@ public class JDBCConnectionMain {
 
     }
 
-    public static List<Student> getById(int id) {
-        List<Student> studentList = new ArrayList<>();
-        String sql = "select * from test2 where id=?";
-        try {
-            ps = db.getCon().prepareStatement(sql);
-            ps.setInt(1, id);
-            rs = ps.executeQuery();
-
-            while (rs.next()) {
-                Student s = new Student(
-                        rs.getInt("id"),
-                        rs.getString("name"),
-                        rs.getString("email"),
-                        rs.getString("address"),
-                        rs.getString("cell")
-                );
-
-                studentList.add(s);
-            }
-
-        } catch (SQLException ex) {
-            Logger.getLogger(JDBCConnectionMain.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return studentList;
-
-    }
+//    public static List<Student> getById(int id) {
+//        List<Student> studentList = new ArrayList<>();
+//        String sql = "select * from test2 where id=?";
+//        try {
+//            ps = db.getCon().prepareStatement(sql);
+//            ps.setInt(1, id);
+//            rs = ps.executeQuery();
+//
+//            while (rs.next()) {
+//                Student s = new Student(
+//                        rs.getInt("id"),
+//                        rs.getString("name"),
+//                        rs.getString("email"),
+//                        rs.getString("address"),
+//                        rs.getString("cell")
+//                );
+//
+//                studentList.add(s);
+//            }
+//
+//        } catch (SQLException ex) {
+//            Logger.getLogger(JDBCConnectionMain.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//        return studentList;
+//
+//    }
 
 }
