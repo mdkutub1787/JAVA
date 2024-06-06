@@ -12,7 +12,7 @@ public class TestJDBC2 {
 
     public static void main(String[] args) {
         Connection con = null;
-        String url = "jdbc:mysql://localhost:3306/table";
+        String url = "jdbc:mysql://localhost:3306/dbtest";
         String user = "root";
         String password = "1234";
         String Driver = "com.mysql.cj.jdbc.Driver";
@@ -21,14 +21,14 @@ public class TestJDBC2 {
             con = DriverManager.getConnection(url, user, password);
 
             // Insert statement
-            PreparedStatement insertStatement = con.prepareStatement("INSERT INTO dbtest (Name, City) VALUES (?, ?)");
+            PreparedStatement insertStatement = con.prepareStatement("INSERT INTO student (Name, City) VALUES (?, ?)");
             insertStatement.setString(1, "Sanaullah ");
             insertStatement.setString(2, "Rajshahi");
             int rowsInserted = insertStatement.executeUpdate();
            
 
             // Select statement
-            PreparedStatement selectStatement = con.prepareStatement("SELECT * FROM dbtest");
+            PreparedStatement selectStatement = con.prepareStatement("SELECT * FROM student");
             ResultSet rs = selectStatement.executeQuery();
 
             while (rs.next()) {
