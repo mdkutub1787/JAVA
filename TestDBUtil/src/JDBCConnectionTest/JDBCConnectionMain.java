@@ -16,10 +16,9 @@ public class JDBCConnectionMain {
     static JDBCConnection db = new JDBCConnection();
 
     public static void main(String[] args) {
-        
+
         saveData();
-        showData();
-        Student student = new Student(1, "sanaullahhhhh", "ail@gmail.com", "", "");
+        Student student = new Student(1, "Kutub Uddin", "Kutubuddin@gmail.com", "dhaka", "017630017877");
         editData(student);
         showData();
 //        Student student = new Student();
@@ -132,5 +131,4 @@ public class JDBCConnectionMain {
 //        return studentList;
 //
 //    }
-
 }
