@@ -18,7 +18,7 @@ public class JDBCConnectionMain {
     public static void main(String[] args) {
 
         saveData();
-        Student student = new Student(1, "Kutub Uddin", "Kutubuddin@gmail.com", "dhaka", "017630017877");
+        Student student = new Student(4, "Yeamin khan", "Yeamin@gmail.com", "kuaushtia", "0195655630017877");
         editData(student);
         showData();
 //        Student student = new Student();
