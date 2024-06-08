@@ -17,6 +17,7 @@ public class NewJDBCMain {
         getSaveData();
         NewStudent ns = new NewStudent(4, "Najmul   ", "Chapay");
         getEditData(ns);
+        getDeleteData(1);
         getShowData();
 
     }
@@ -72,6 +73,23 @@ public class NewJDBCMain {
             ps.executeUpdate();
             ps.close();
             njdbc.getConnection().close();
+
+        } catch (SQLException ex) {
+            Logger.getLogger(NewJDBCMain.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+
+    public static void getDeleteData(int id) {
+        String deleteSql = "delete from test where id=?";
+        try {
+            ps = njdbc.getConnection().prepareStatement(deleteSql);
+            ps.setInt(1, id);
+            ps.executeUpdate();
+
+            ps.close();
+            njdbc.getConnection().close();
+            System.out.println("Data deleted Succecfully");
 
         } catch (SQLException ex) {
             Logger.getLogger(NewJDBCMain.class.getName()).log(Level.SEVERE, null, ex);
