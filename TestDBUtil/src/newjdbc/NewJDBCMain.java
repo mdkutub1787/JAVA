@@ -15,7 +15,7 @@ public class NewJDBCMain {
 
     public static void main(String[] args) {
         getSaveData();
-        NewStudent ns = new NewStudent(2, "Sanaullah  N", "Dhaka");
+        NewStudent ns = new NewStudent(4, "Najmul   ", "Chapay");
         getEditData(ns);
         getShowData();
 
