@@ -9,13 +9,13 @@ public class Student {
     public Student() {
     }
 
-    public Student(String name, String city) {
+    public Student(int id, String name, String city) {
+        this.id = id;
         this.name = name;
         this.city = city;
     }
 
-    public Student(int id, String name, String city) {
-        this.id = id;
+    public Student(String name, String city) {
         this.name = name;
         this.city = city;
     }
