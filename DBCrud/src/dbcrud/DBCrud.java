@@ -18,12 +18,12 @@ public class DBCrud {
         saveData("sala Uddin", "sami@gmail.com", "Lalbagh", "123456789");
         System.out.println("\n After insert");
         showData();
-        
-        deleteData(10);
+
+        deleteData(1);
         System.out.println("\n After Delete ");
         showData();
-        
-        updateData("Kutub Uddin","kutub@gmail.com","Lalbagh","0000000", 9);
+
+        updateData("Kutub Uddin", "kutub@gmail.com", "Lalbagh", "0000000", 1);
         System.out.println("\n After Update");
         showData();
     }
