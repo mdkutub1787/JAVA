@@ -215,7 +215,11 @@
 /JDBC/build/
 /DBCrud/nbproject/private/
 /DBCrud/build/
+<<<<<<< HEAD
 /JDBCConnection/nbproject/private/
 /JavaApplication21/nbproject/private/
 /JDBCCon/nbproject/private/
 /JDBCCon/build/
+=======
+/JavaApplication18/nbproject/private/
+>>>>>>> 1f74b971bd0cb0a5eb61ea1510ba6ba7157e3a45
